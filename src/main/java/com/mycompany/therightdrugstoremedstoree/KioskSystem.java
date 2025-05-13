@@ -235,7 +235,7 @@ public class KioskSystem extends JFrame {
         boolean pwd = pwdCheckbox.isSelected();
         boolean hasDiscount = senior || pwd;
 
-        // Limit to first 15 items exactly if list is longer, else use all
+        // Limit to first 15 items exactly if list is longer, else use al
         List<Product> displayList = currentList.size() > 15 ? currentList.subList(0, 15) : new ArrayList<>(currentList);
 
         for (Product p : displayList) {
